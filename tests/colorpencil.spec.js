@@ -1,7 +1,8 @@
 describe("colorpencil",function(){
+	//<placeholders come here>
 	it("returns an obect when constructed",function(){
 		var	cpencil = new Colorpencil();
-		expect(cpencil).toBeNotNull();
+		expect(cpencil).not.toBeNull();
 	});
 	it("instance can take in an input string and generate a classed html output",function(){
 		var 	cpencil = new Colorpencil(),

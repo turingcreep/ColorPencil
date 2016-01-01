@@ -1,4 +1,4 @@
-export default class Evaluator{
+export class Evaluator{
 	constructor(){
 	}
 	test(){

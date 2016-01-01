@@ -1,7 +1,7 @@
-import Lexer from 'lexer';
-import Parser from 'parser';
-import Evaluator from 'evaluator';
-export default class Colorpencil{
+//import {Lexer} from 'lexer';
+//import {Parser} from 'parser';
+//import {Evaluator} from 'evaluator';
+export class Colorpencil{
 	constructor(configFile="color.conf.js"){
 		this.configFile = configFile;	
 		this.lexer = new Lexer();

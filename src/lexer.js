@@ -1,4 +1,4 @@
-export default class Lexer{
+export class Lexer{
 	constructor(){
 	}
 	test(){
