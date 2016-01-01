@@ -20,7 +20,7 @@ function _readFile(filePath){
 	return  fs.readFileSync(filePath,'utf8').replace(/\"use\sstrict\"\;/g,'');
 }
 function _updateTemplate(test,temp){
-	return test.replace('//<placeholders come here>',temp);
+	return test.replace(/\/\/\<placeholders\scome\shere\>/g,temp);
 }
 function _pipeToDistSpec(template){
 	fs.writeFileSync('test.dist.spec.js',template);	
