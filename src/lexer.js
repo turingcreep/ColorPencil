@@ -4,4 +4,7 @@ export class Lexer{
 	test(){
 		console.log("testing ::Lexer");
 	}
+	write(){
+
+	}
 }

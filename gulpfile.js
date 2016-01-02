@@ -26,9 +26,11 @@ function _pipeToDistSpec(template){
 	fs.writeFileSync('test.dist.spec.js',template);	
 }
 function _clean(){
+	console.log("Cleaning temporary files...");
 	fs.unlinkSync('app.js');
 	fs.unlinkSync('test.spec.js');	
 	fs.unlinkSync('test.dist.spec.js');	
+	console.log("Finished cleanup.");
 }
 
 
@@ -63,5 +65,11 @@ gulp.task("clean",function(){
 });
 
 gulp.task("test",["running jasmine"],function(){
+});
+gulp.task("watch",function(){
+	gulp.watch('src/*',['test']);
+	gulp.watch('tests/**/*.spec.js',['test']);
+});
+gulp.task("dev",["watch","test"],function(){
 	_clean();
 });
