@@ -1,0 +1,37 @@
+{
+  "name": "colorpencil",
+  "version": "1.0.0",
+  "description": "Make reading easy and colorful",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turingcreep/ColorPencil.git"
+  },
+  "author": "Shankar Sengupta (shankar.sengupta.dev@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turingcreep/ColorPencil/issues"
+  },
+  "homepage": "https://github.com/turingcreep/ColorPencil#readme",
+  "dependencies": {
+    "monet": "^0.9.0",
+    "ramda": "^0.26.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1",
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@storybook/addon-actions": "^5.3.1",
+    "@storybook/addon-links": "^5.3.1",
+    "@storybook/addons": "^5.3.1",
+    "@storybook/react": "^5.3.1",
+    "babel-loader": "^8.0.6"
+  }
+}
