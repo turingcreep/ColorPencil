@@ -4,7 +4,8 @@
   "description": "Make reading easy and colorful",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --config webpack.config.js"
+    "webpack": "webpack --config webpack.config.js",
+    "build" : "webpack --config webpack.config.js && cp dist/colorpencil.dist.js test"
   },
   "repository": {
     "type": "git",
