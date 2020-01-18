@@ -7,7 +7,7 @@ function Colorize(elem, config){
   function flipColorMap(colorMap){
     const result = {};
     Object.keys(colorMap).forEach(key => {
-      result[colorMap[key]] = key;
+      result[colorMap[key].toLowerCase()] = key;
     });
     return result;
   }
@@ -17,7 +17,7 @@ function Colorize(elem, config){
   }
 
   function colorizeWord(tokenColorMap, word){
-    const color = tokenColorMap[word];
+    const color = tokenColorMap[word.toLowerCase()];
     return color ? wrapInColor(word, color) : word;
   }
 
